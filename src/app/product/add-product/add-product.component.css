@@ -1,0 +1,19 @@
+.form-class{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.form-heading{
+    text-align: center;
+    margin: auto;
+}
+
+.form-header{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.error-message{
+    color: red;
+}

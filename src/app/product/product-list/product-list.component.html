@@ -1,0 +1,56 @@
+<div class="container">
+  <h2 class="text-large text-center">Latest Collection of ArtWork</h2>
+  <div class="flex-sort">
+    <mat-form-field class="sort-input">
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search for a Painting" />
+    </mat-form-field>
+    <mat-form-field class="sort-dropdown">
+      <mat-select
+        (selectionChange)="sortProducts($event.value)"
+        placeholder="Sort"
+      >
+        <mat-option value="priceLowHigh">Price: Low to High</mat-option>
+        <mat-option value="priceHighLow">Price: High to Low</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div fxLayout="row wrap" fxLayoutGap="35px grid">
+    <div *ngFor="let product of filteredProducts; index as i">
+      <mat-card class="product-card custom-card" appearance="outlined">
+        <img
+          mat-card-image
+          src="{{ product.image_url }}"
+          alt="Photo of a Shiba Inu"
+          class="card-image"
+        />
+        <mat-card-content>
+          <mat-card-title class="product-title">{{
+            product.name
+          }}</mat-card-title>
+          <mat-card-subtitle>{{
+            product.price | currency : "INR"
+          }}</mat-card-subtitle>
+        </mat-card-content>
+        <mat-card-actions class="action-div">
+          <button
+            mat-button
+            color="primary"
+            class="action-edit"
+            [routerLink]="['/edit-product', product.id]"
+          >
+            Edit
+          </button>
+          <button
+            mat-button
+            color="accent"
+            class="action-add"
+            routerLinkActive="router-link-active"
+            (click)="addToCart(product)"
+          >
+            Add To Cart
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paint-title {
+  font-size: 36px;
+  padding: 4px;
+  font-weight: 400;
+}
+
+.logo {
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<div class="container-sm">
+  <h1>Your Cart</h1>
+  <mat-card>
+    <mat-list>
+      <mat-list-item *ngFor="let item of items" class="list-item">
+        <div class="list-item">
+          <div>
+            <span matListItemTitle>{{ item.name }}</span>
+            <span matListItemLine>{{ item.price | currency : "INR" }}</span>
+          </div>
+
+          <button mat-raised-button color="accent" (click)="removeProduct(item.id)">
+            Remove
+          </button>
+        </div>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="price" matListItemTitle>Total (INR)</span>
+        <span class="price" matListItemLine>{{
+          totalSum | currency : "INR"
+        }}</span>
+      </mat-list-item>
+      <mat-list-item class="text-right">
+        <button mat-flat-button color="primary" (click)="clearCart()">
+          Clear
+        </button>
+      </mat-list-item>
+      <mat-list-item class="text-right">
+        <button mat-raised-button color="accent" (click)="checkout()">
+          Checkout
+        </button>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+</div>

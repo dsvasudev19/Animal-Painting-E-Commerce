@@ -1,0 +1,200 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Dog",
+      "price": 79,
+      "image_url": "Product_01.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Dinosaur",
+      "price": 39,
+      "image_url": "Product_02.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Iguana",
+      "price": 49,
+      "image_url": "https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/3085434/6072604/113_WUMPLE133063_lowres__83373.1706707371.jpg?c=2"
+    },
+    {
+      "id": "4",
+      "name": "Bird",
+      "price": 89,
+      "image_url": "Product_04.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Tiger",
+      "price": 79,
+      "image_url": "Product_05.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Cat",
+      "price": 19,
+      "image_url": "Product_06.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Lion",
+      "price": 29,
+      "image_url": "Product_07.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Owl",
+      "price": 49,
+      "image_url": "Product_08.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Cat 2",
+      "price": 79,
+      "image_url": "Product_09.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Deer Stag",
+      "price": 99,
+      "image_url": "Product_10.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Elephant",
+      "price": 119,
+      "image_url": "Product_11.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Dog 2",
+      "price": 109,
+      "image_url": "Product_12.jpg"
+    },
+    {
+      "name": "Lizard (Landscape)",
+      "price": 2099,
+      "image_url": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      "id": "296"
+    },
+    {
+      "name": "Dinosaur 192x180",
+      "price": 35,
+      "image_url": "https://i.abcnewsfe.com/a/ff9ddf87-2afd-4649-a288-dc75f9fe064b/dino-1-ht-er-240110_1704903903782_hpMain_2_16x9.jpeg?w=992",
+      "id": "194"
+    },
+    {
+      "name": "Pet Cat",
+      "price": 42,
+      "image_url": "https://www.shutterstock.com/image-photo/cat-yellow-face-sitting-on-600nw-2470054451.jpg",
+      "id": "40"
+    },
+    {
+      "id": "314",
+      "name": "Fox (Acrylic Paint)",
+      "price": 719,
+      "image_url": "https://img.freepik.com/premium-photo/painting-fox-woods-with-word-fox-it_899870-6639.jpg"
+    },
+    {
+      "name": "Chimpanzee",
+      "price": 390,
+      "image_url": "https://www.nkuringosafaris.com/wp-content/uploads/2022/03/kanyanchu-kibale-chimps.jpg",
+      "id": "684"
+    },
+    {
+      "name": "Forest",
+      "price": 890,
+      "image_url": "https://t3.ftcdn.net/jpg/05/25/89/16/360_F_525891606_EsS60RgrJxtzeaoWVMXcgeOXoBEWGPX7.jpg",
+      "id": "949"
+    },
+    {
+      "id": "82",
+      "name": "Pink Flamingos",
+      "price": 445,
+      "image_url": "https://i.etsystatic.com/10362662/r/il/12f847/2534833334/il_570xN.2534833334_6n8g.jpg"
+    },
+    {
+      "id": "846",
+      "name": "Zebra",
+      "price": 889,
+      "image_url": "https://petportraitsandwildlifeart.co.uk/wp-content/gallery/wildlife/Zebra-8-x-10-TO-POST.jpg"
+    },
+    {
+      "id": "692",
+      "name": "Dinosaur",
+      "price": 999,
+      "image_url": "https://cdn.shopify.com/s/files/1/0234/6585/3008/files/largepaintingart_cartoon_11.jpg?v=1639300523"
+    },
+    {
+      "id": "748",
+      "name": "Shark",
+      "price": 789,
+      "image_url": "https://cdn.shopify.com/s/files/1/0234/6585/3008/files/largepaintingart_cartoon_6.jpg?v=1639300489"
+    }
+  ],
+  "cart": [
+    {
+      "id": "6",
+      "name": "Cat",
+      "price": 19,
+      "image_url": "Product_06.jpg"
+    }
+  ],
+  "checkout": [
+    {
+      "0": {
+        "id": "1",
+        "name": "Dog",
+        "price": 79,
+        "image_url": "Product_01.jpg"
+      },
+      "1": {
+        "id": "2",
+        "name": "Dinosaur",
+        "price": 39,
+        "image_url": "Product_02.jpg"
+      },
+      "2": {
+        "id": "4",
+        "name": "Sai Mallik",
+        "price": 98,
+        "image_url": "Product_01.png"
+      },
+      "id": "3b13"
+    },
+    {
+      "0": {
+        "id": "684",
+        "name": "Chimpanzee",
+        "price": 390,
+        "image_url": "https://www.nkuringosafaris.com/wp-content/uploads/2022/03/kanyanchu-kibale-chimps.jpg"
+      },
+      "1": {
+        "id": "3",
+        "name": "Iguana",
+        "price": 49,
+        "image_url": "https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/3085434/6072604/113_WUMPLE133063_lowres__83373.1706707371.jpg?c=2"
+      },
+      "2": {
+        "id": "4",
+        "name": "Bird",
+        "price": 89,
+        "image_url": "Product_04.jpg"
+      },
+      "3": {
+        "id": "5",
+        "name": "Tiger",
+        "price": 79,
+        "image_url": "Product_05.jpg"
+      },
+      "4": {
+        "id": "9",
+        "name": "Cat 2",
+        "price": 79,
+        "image_url": "Product_09.jpg"
+      },
+      "id": "7e06"
+    }
+  ]
+}
