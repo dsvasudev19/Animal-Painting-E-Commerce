@@ -19,7 +19,7 @@ export class CartViewComponent implements OnInit {
   constructor(
     private cartService: CartService,
     private snackBar: MatSnackBar,
-    private router:Router
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -42,17 +42,17 @@ export class CartViewComponent implements OnInit {
   }
 
   checkout(): void {
-    let orderId:string="";
+    let orderId: string = '';
     this.cartService.checkOut(this.items).subscribe({
-      next:(data)=>{
-        orderId=data.orderId;
-        let status=this.createPaymentOrder(data.amount,orderId)
+      next: (data) => {
+        orderId = data.orderId;
+        let status = this.createPaymentOrder(data.amount, orderId);
 
-        if(status){
-          this.router.navigate(['/','products'])
+        if (status) {
+          this.router.navigate(['/', 'products']);
         }
-      }
-    })
+      },
+    });
     // createPaymentOrder()
   }
 
@@ -73,16 +73,16 @@ export class CartViewComponent implements OnInit {
     });
   }
 
-  createPaymentOrder(sum: number,orderId:string): any {
+  createPaymentOrder(sum: number, orderId: string): any {
     var options = {
-      key: 'rzp_test_alc9PznICVvKQb', 
-      amount: sum, 
+      key: 'rzp_test_alc9PznICVvKQb',
+      amount: sum,
       currency: 'INR',
       name: 'OnTheGo Rentals',
       description: 'Payment Transaction',
       image: 'https://example.com/your_logo',
-      order_id: orderId, 
-      handler: function (response:any) {
+      order_id: orderId,
+      handler: function (response: any) {
         // These lines needs to be uncommented and need to send an
         // fetch request to verify the status of the payment
         // then redirect the user accordingly
@@ -104,7 +104,7 @@ export class CartViewComponent implements OnInit {
       },
     };
     const rzp1 = new Razorpay(options);
-    
+
     rzp1.open();
     rzp1.on('payment.failed', (response: any) => {
       alert('Payment failed: ' + response.error.description);

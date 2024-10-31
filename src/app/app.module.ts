@@ -11,10 +11,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { CartModule } from './cart/cart.module';
+import { TitlePipePipe } from './pipes/title-pipe.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TitlePipePipe
   ],
   imports: [
     BrowserModule,

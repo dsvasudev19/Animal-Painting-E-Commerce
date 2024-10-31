@@ -135,10 +135,22 @@
   ],
   "cart": [
     {
-      "id": "6",
-      "name": "Cat",
-      "price": 19,
-      "image_url": "Product_06.jpg"
+      "id": "3",
+      "name": "Iguana",
+      "price": 49,
+      "image_url": "https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/3085434/6072604/113_WUMPLE133063_lowres__83373.1706707371.jpg?c=2"
+    },
+    {
+      "id": "4",
+      "name": "Bird",
+      "price": 89,
+      "image_url": "Product_04.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Cat 2",
+      "price": 79,
+      "image_url": "Product_09.jpg"
     }
   ],
   "checkout": [

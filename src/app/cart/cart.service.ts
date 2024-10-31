@@ -27,17 +27,17 @@ export class CartService {
   }
 
   checkOut(products: Product[]): Observable<any> {
-    console.log(products)
-    let totalAmount=products.reduce((acc,prod)=>acc+=prod.price,0);
-    return this.http.post<any>("http://localhost:9000/payment/create-order",{"amount":totalAmount*100,"userId":1})
+    console.log(products);
+    let totalAmount = products.reduce((acc, prod) => (acc += prod.price), 0);
+    this.http.post<void>(this.checkoutUrl, products); 
+    return this.http.post<any>('http://localhost:9000/payment/create-order', {
+      amount: totalAmount * 100,
+      userId: 1,
+    });
     // return this.http.post<void>(this.checkoutUrl, products);
   }
 
-  removeItemFromCart(id:number):Observable<Product>{
-    return this.http.delete<Product>(this.baseUrl+"/"+id);
+  removeItemFromCart(id: number): Observable<Product> {
+    return this.http.delete<Product>(this.baseUrl + '/' + id);
   }
-
-
-  
-  
 }

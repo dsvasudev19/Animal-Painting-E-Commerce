@@ -11,7 +11,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { AddProductComponent } from './add-product/add-product.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
 @NgModule({
   declarations: [
     ProductListComponent,
